@@ -1,0 +1,76 @@
+Apr 21 18:29:04 npi chat[2702]: send (ATE^M)
+Apr 21 18:29:04 npi chat[2702]: expect (OK)
+Apr 21 18:29:04 npi chat[2702]: ATE^M^M
+Apr 21 18:29:04 npi chat[2702]: OK
+Apr 21 18:29:04 npi chat[2702]:  -- got it
+Apr 21 18:29:04 npi chat[2702]: send (ATH^M)
+Apr 21 18:29:04 npi chat[2702]: expect (OK)
+Apr 21 18:29:04 npi chat[2702]: ^M
+Apr 21 18:29:04 npi chat[2702]: ATH^M^M
+Apr 21 18:29:04 npi chat[2702]: OK
+Apr 21 18:29:04 npi chat[2702]:  -- got it
+Apr 21 18:29:04 npi chat[2702]: send (ATP^M)
+Apr 21 18:29:04 npi chat[2702]: expect (OK)
+Apr 21 18:29:04 npi chat[2702]: ^M
+Apr 21 18:29:04 npi chat[2702]: ATP^M^M
+Apr 21 18:29:04 npi chat[2702]: OK
+Apr 21 18:29:04 npi chat[2702]:  -- got it
+Apr 21 18:29:04 npi chat[2702]: send (AT+CGDCONT=1,\"IP\",\"CMNET\"^M)
+Apr 21 18:29:04 npi chat[2702]: expect (OK)
+Apr 21 18:29:04 npi chat[2702]: ^M
+Apr 21 18:29:04 npi chat[2702]: AT+CGDCONT=1,"IP","CMNET"^M^M
+Apr 21 18:29:04 npi chat[2702]: OK
+Apr 21 18:29:05 npi chat[2702]:  -- got it
+Apr 21 18:29:05 npi chat[2702]: send (ATD*99#^M)
+Apr 21 18:29:05 npi chat[2702]: expect (CONNECT)
+Apr 21 18:29:05 npi chat[2702]: ^M
+Apr 21 18:29:05 npi chat[2702]: ATD*99#^M^M
+Apr 21 18:29:05 npi chat[2702]: CONNECT
+Apr 21 18:29:05 npi systemd-udevd[2704]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Apr 21 18:29:05 npi chat[2702]:  -- got it
+Apr 21 18:29:05 npi pppd[2695]: Script /usr/sbin/chat -v -f ec20_ppp_dialer finished (pid 2701), status = 0x0
+Apr 21 18:29:05 npi pppd[2695]: Serial connection established.
+Apr 21 18:29:05 npi pppd[2695]: using channel 1
+Apr 21 18:29:05 npi connmand[372]: ppp0 {create} index 14 type 512 <PPP>
+Apr 21 18:29:05 npi connmand[372]: ppp0 {update} flags 4240 <DOWN>
+Apr 21 18:29:05 npi connmand[372]: ppp0 {newlink} index 14 address 00:00:00:00:00:00 mtu 1500
+Apr 21 18:29:05 npi connmand[372]: ppp0 {newlink} index 14 operstate 2 <DOWN>
+Apr 21 18:29:05 npi pppd[2695]: Using interface ppp0
+Apr 21 18:29:05 npi pppd[2695]: Connect: ppp0 <--> /dev/ttyUSB1
+Apr 21 18:29:06 npi pppd[2695]: sent [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0x22703170> <pcomp> <accomp>]
+Apr 21 18:29:06 npi pppd[2695]: rcvd [LCP ConfReq id=0x1 <asyncmap 0x0> <auth pap> <magic 0x6ddf90a7> <pcomp> <accomp>]
+Apr 21 18:29:06 npi pppd[2695]: sent [LCP ConfAck id=0x1 <asyncmap 0x0> <auth pap> <magic 0x6ddf90a7> <pcomp> <accomp>]
+Apr 21 18:29:06 npi pppd[2695]: rcvd [LCP ConfAck id=0x1 <asyncmap 0x0> <magic 0x22703170> <pcomp> <accomp>]
+Apr 21 18:29:06 npi pppd[2695]: sent [LCP EchoReq id=0x0 magic=0x22703170]
+Apr 21 18:29:06 npi pppd[2695]: sent [PAP AuthReq id=0x1 user="Anyname" password=<hidden>]
+Apr 21 18:29:06 npi pppd[2695]: rcvd [LCP EchoRep id=0x0 magic=0x6ddf90a7 22 70 31 70]
+Apr 21 18:29:07 npi pppd[2695]: rcvd [PAP AuthAck id=0x1 "" 00]
+Apr 21 18:29:07 npi pppd[2695]: PAP authentication succeeded
+Apr 21 18:29:07 npi pppd[2695]: sent [IPCP ConfReq id=0x1 <addr 0.0.0.0> <ms-dns1 0.0.0.0> <ms-dns2 0.0.0.0>]
+Apr 21 18:29:07 npi pppd[2695]: rcvd [IPCP ConfReq id=0x2]
+Apr 21 18:29:07 npi pppd[2695]: sent [IPCP ConfNak id=0x2 <addr 0.0.0.0>]
+Apr 21 18:29:07 npi pppd[2695]: rcvd [IPCP ConfNak id=0x1 <addr 10.20.2.7> <ms-dns1 123.123.123.123> <ms-dns2 123.123.123.124>]
+Apr 21 18:29:07 npi pppd[2695]: sent [IPCP ConfReq id=0x2 <addr 10.20.2.7> <ms-dns1 123.123.123.123> <ms-dns2 123.123.123.124>]
+Apr 21 18:29:07 npi pppd[2695]: rcvd [IPCP ConfReq id=0x3]
+Apr 21 18:29:07 npi systemd-networkd[208]: ppp0: Gained carrier
+Apr 21 18:29:07 npi pppd[2695]: sent [IPCP ConfAck id=0x3]
+Apr 21 18:29:07 npi pppd[2695]: rcvd [IPCP ConfAck id=0x2 <addr 10.20.2.7> <ms-dns1 123.123.123.123> <ms-dns2 123.123.123.124>]
+Apr 21 18:29:07 npi pppd[2695]: Could not determine remote IP address: defaulting to 10.64.64.64
+Apr 21 18:29:07 npi connmand[372]: ppp0 {add} address 10.20.2.7/32 label ppp0 family 2
+Apr 21 18:29:07 npi connmand[372]: ppp0 {del} address 10.20.2.7/32 label ppp0
+Apr 21 18:29:07 npi connmand[372]: ppp0 {add} address 10.20.2.7/32 label ppp0 family 2
+Apr 21 18:29:07 npi connmand[372]: ppp0 {RX} 4 packets 52 bytes
+Apr 21 18:29:07 npi connmand[372]: ppp0 {TX} 4 packets 58 bytes
+Apr 21 18:29:07 npi connmand[372]: ppp0 {update} flags 69841 <UP,RUNNING,LOWER_UP>
+Apr 21 18:29:07 npi connmand[372]: ppp0 {newlink} index 14 address 00:00:00:00:00:00 mtu 1500
+Apr 21 18:29:07 npi connmand[372]: ppp0 {newlink} index 14 operstate 0 <UNKNOWN>
+Apr 21 18:29:07 npi pppd[2695]: not replacing default route to eth1 [0.0.0.0]
+Apr 21 18:29:07 npi connmand[372]: ppp0 {add} route 10.64.64.64 gw 0.0.0.0 scope 253 <LINK>
+Apr 21 18:29:07 npi pppd[2695]: local  IP address 10.20.2.7
+Apr 21 18:29:07 npi pppd[2695]: remote IP address 10.64.64.64
+Apr 21 18:29:07 npi pppd[2695]: primary   DNS address 123.123.123.123
+Apr 21 18:29:07 npi pppd[2695]: secondary DNS address 123.123.123.124
+Apr 21 18:29:07 npi pppd[2695]: Script /etc/ppp/ip-up started (pid 2708)
+Apr 21 18:29:07 npi connmand[372]: ppp0 {add} route 0.0.0.0 gw 0.0.0.0 scope 253 <LINK>
+Apr 21 18:29:07 npi pppd[2695]: Script /etc/ppp/ip-up finished (pid 2708), status = 0x0
+Apr 21 18:29:35 npi systemd[1]: session-c8.scope: Succeeded.
