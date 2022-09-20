@@ -1,0 +1,15 @@
+CROSS_COMPILE   = arm-linux-gnueabihf-
+#CROSS_COMPILE   = arm-none-eabi-
+CXX		= $(CROSS_COMPILE)g++
+#GXX             = g++ -std=c++11
+CC		= $(CROSS_COMPILE)gcc
+#GCC             = gcc
+GCC=$(CXX)
+$(info $(GCC))
+
+CFLAGS += -I$(ENV_DIR)/buildroot/output/rockchip_rv1126_rv1109_facial_gate/build/gpsd-3.17
+LIBS+= -L$(ENV_DIR)/buildroot/output/rockchip_rv1126_rv1109_facial_gate/target/usr/lib -lgps -ldbus-1 -lm
+
+
+gpsc: gpsc.c
+	$(CC) gpsc.c ${CFLAGS} ${LIBS} -o gpsc
